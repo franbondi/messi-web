@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.692);
+    background-blend-mode: multiply;
+}
+
+.inicio {
+    background-image: url(../img/messi-inicio-back.jpg);
+}
+
+.pp {
+    background-image: url(../img/messi-pp.jpg);
+}
+
+.stats {
+    background-image: url(../img/messi-stats.webp);
+
+}
+
+.palmares {
+    background-image: url(../img/Messi-campeon.jpg);
+}
+
+.fotos {
+    background-image: url(../img/argentina-campeon.jpg);
+}
+
+.logo {
+    width: 75px;
+    height: auto;
+    margin-left: 1rem;
+    padding: 1px;
+    position: static;
+ }
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3px;
+    font-weight: 900;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    font-weight: 900;
+    font-size: 24px;
+    margin-right: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+
+    transition: 0.5s;
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.1);
+}
+
+.lionel-inicio {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin-top: 220px;
+    margin-left: 750px;
+}
+
+.messi-inicio {
+    display: flex;;
+    height: 70px;
+    margin-top: 1.25rem;
+    margin-left: 702px;
+}
+
+
+
+.pie-inicio {
+    font-size: 30px;
+    padding: 25px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 100);
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.pieDePagina {
+    color: rgb(255, 0, 0);
+}
+
+/*proximos partidos*/
+
+.fechas {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    width: 50px;
+    margin-top: 40px;
+    margin-left: 755px;
+    background-color: white;
+    border: 1px solid red;
+}
+
+.fechas span {
+    color: red;
+}
+
+.fdos {
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 892px;
+
+}
+
+.ftres {
+    width: 50px;
+    margin-top: 40px;
+    margin-left: 1025px;
+}
+
+.mainpp {
+    display: flex;
+    position: absolute;
+    gap: 1rem;
+    width: 10.7%;
+    height: 300px;
+    background-color: rgba(12, 96, 221, 0.795);
+    margin-top: 45px;
+    margin-left: 850px;
+    padding: 1.25rem;
+    border: 3px solid rgb(0, 27, 77);
+}
+
+.dos {
+    margin-top: 80px;
+    margin-right: 90px;
+    margin-left: 715px;
+}
+
+.tres {
+    margin-top: 80px;
+    margin-right: 1.25rem;
+    margin-left: 985px;
+}
+
+/*stats*/
+
+.mainstats {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor {
+    display: flex;
+    width: 80%;
+    height: 28px;
+    margin-top: 55px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .barra {
+    height: 100%;
+    color: white;
+    font-weight: 800;
+    padding-top: 5.5px;
+    padding-left: 1.25rem;
+  }
+
+.goles {
+    background-color: #183642;
+}
+
+.asistencias {
+    background-color: #313D5A;
+}
+
+.partidos {
+    background-color: #3f308a;
+}
+
+.titulos {
+    background-color: #715ece;
+}
+
+.premios {
+    background-color: #8b7cd4;
+}
+
+/*palmares*/
+
+.messipalmares {
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+
+
+
