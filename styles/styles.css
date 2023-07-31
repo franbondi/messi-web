@@ -22,10 +22,10 @@
 
 .pp {
   background-color: rgb(27, 27, 27);
-  background-image: url(../img/messi-inicio-back.jpg);
+  background-image: url(../img/FOTOS/EYZ5A5HEBNF2VHJGAVTGWM4NSE.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #0e0d0d;
+  background-color: #0e0d0df5;
   background-blend-mode: multiply;
   background-attachment: fixed;
   background-position: center center;
@@ -119,7 +119,7 @@ header a:hover{
     .menu {
         opacity: 0;
         visibility: hidden;
-        z-index: 1;
+        z-index: 5;
     }
 
     .menu {
@@ -163,7 +163,7 @@ header a:hover{
 
 @media screen and (max-width: 596px) {
     .inter-miami {
-        width: 30%;
+        display: none;
     }
 }
 
@@ -298,7 +298,19 @@ header a:hover{
   z-index: 1;
   width: 40%;
   top: 55%;
-  left: 80%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  filter: brightness(20%);
+}
+
+.messi-silueta-psg {
+  position: absolute;
+  z-index: 1;
+  width: 43%;
+  top: 55%;
+  left: 35%;
   transform: translate(-50%, -50%);
   max-width: 100%;
   max-height: 100%;
@@ -306,60 +318,117 @@ header a:hover{
 }
 
 .fechas {
-  display: flex;
   position: absolute;
   text-align: center;
-  width: 50px;
+  width: 4rem;
   height: 10%;
-  margin-top: 20px;
-  margin-left: 755px;
-  background-color: white;
-  border: 1px solid red;
+  background-color: rgb(250, 97, 186);
   font-weight: 800;
+  font-size: 24px;
+  z-index: 3;
+}
+
+.funo {
+  left: 42.5%;
+  top: 20.5%;
 }
 
 .fechas span {
-  color: red;
+  color: rgb(255, 255, 255);
 }
 
 .fdos {
-  position: absolute;
-  width: 50px;
-  height: 10%;
-  margin-top: 0px;
-  margin-left: 892px;
+  top: 16%;
+  left: 56.5%;
 }
 
 .ftres {
-  width: 50px;
-  height: 10%;
-  margin-top: 20px;
-  margin-left: 1025px;
+  top: 20.5%;
+  left: 70%;
 }
 
-.mainpp {
+.divpp {
   display: flex;
   position: absolute;
-  gap: 1rem;
-  width: 10.7%;
-  height: 55%;
-  background-color: #0c60ddcb;
-  margin-top: 45px;
-  margin-left: 850px;
-  padding: 1.25rem;
-  border: 3px solid #001b4d;
+  width: 15%;
+  height: 66%;
+  color: white;
+  background-color: #303030cb;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.uno {
+  top: 28%;
+  left: 37.1%;
 }
 
 .dos {
-  margin-top: 80px;
-  margin-right: 90px;
-  margin-left: 715px;
+  top: 23%;
+  left: 50.9%;
 }
 
 .tres {
-  margin-top: 80px;
-  margin-right: 1.25rem;
-  margin-left: 985px;
+  top: 28%;
+  left: 64.7%;
+}
+
+@media screen and (max-width: 872px) {
+
+  .messi-perfil {
+    width: 50%;
+    top: 40%;
+    left: 50%;
+  }
+
+  .messi-silueta-psg {
+    width: 53%;
+    top: 170%;
+    left: 57%;
+  }
+
+  .fechas {
+    height: 15%;
+  }
+
+  .funo {
+    left: 13.5%;
+    top: 57.5%;
+  }
+   
+  .fdos {
+    top: 90%;
+    left: 8%;
+  }
+  
+  .ftres {
+    top: 125%;
+    left: 13.5%;
+    margin-bottom: 3rem;
+  }
+  
+
+  .divpp {
+    width: 70%;
+    height: 30%;
+  }
+  
+  .uno {
+    top: 50%;
+    left: 18%;
+  }
+  
+  .dos {
+    width: 80%;
+    top: 83%;
+    left: 13%;
+
+  }
+  
+  .tres {
+    top: 116%;
+    left: 18%;
+  }
 }
 
 /*stats*/
