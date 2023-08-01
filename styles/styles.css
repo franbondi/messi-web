@@ -541,11 +541,10 @@ header a:hover{
 
 /* FOTOS */
 
-/* Estilo para el carrusel */
 #myCarousel {
     padding: 1rem;
     width: 50%;
-    max-height: 100%; /* Ajusta la altura según tus necesidades */
+    max-height: 100%;
     overflow: hidden;
     margin: 50px auto;
   }
@@ -553,18 +552,16 @@ header a:hover{
   .carousel-item img {
     justify-content: center;
     max-width: 100%;
-    max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
+    max-height: 400px;
     width: auto;
     height: auto;
-    margin: auto; /* Para centrar la imagen horizontalmente */
+    margin: auto;
   }
   
-  /* Cambia los estilos para los controles previo y siguiente del carrusel si es necesario */
   .carousel-control-prev, .carousel-control-next {
     height: 30px;
     margin-top: 5%;
     font-size: 25px;
-    /* Agrega aquí los estilos deseados para los controles */
   }
 
 @media screen and (max-width: 872px) {
