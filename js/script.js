@@ -16,9 +16,8 @@ cerrar.addEventListener("click", () => {
 
 
 function startCarousel() {
-    // Verificar si el carrusel no se está reproduciendo actualmente
     if (!$('#myCarousel').hasClass('carousel')) {
-      $('#myCarousel').carousel('cycle'); // Iniciar el carrusel
+      $('#myCarousel').carousel('cycle');
     }
   }
 

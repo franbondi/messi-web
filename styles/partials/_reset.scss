@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+
+
+    .inicio {
+        background-image: url(../img/image1-1536x1024.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #5f004b50;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      
+      .pp {
+        background-color: rgb(27, 27, 27);
+        background-image: url(../img/FOTOS/EYZ5A5HEBNF2VHJGAVTGWM4NSE.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #0e0d0df5;
+        background-blend-mode: multiply; 
+        background-attachment: fixed;
+        background-position: center center;
+        overflow-x: hidden;
+      }
+      
+      .stats {
+        background-image: url(../img/Lionel-Messi-20.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #8f004f75;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+        background-position: center center;
+      }
+      
+      .palmares {
+        background-image: url(../img/Messi-campeon.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #000000cc;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+        background-position: center center;
+      }
+      
+      .fotos {
+        background-image: url(../img/argentina-campeon.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #000000b0;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+        background-position: center center;
+      }

@@ -1,0 +1,167 @@
+@mixin menu {
+    @media screen and (max-width: 872px) {
+        @content;
+        .menu.visible { 
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+@mixin inter {
+    @media screen and (max-width: 596px) {
+        @content;
+    }
+}
+
+@mixin lionelmessi {
+    @media screen and (max-width: 650px) {
+        @content; 
+    }
+}
+
+@mixin liomessi {
+    @media screen and (max-width: 308px) {
+        @content;
+    }
+}
+
+@mixin palmares {
+    @media screen and (max-width: 655px) {
+        @content; 
+    }
+}
+
+@mixin fotos {
+    @media screen and (max-width: 872px) {
+        @content; 
+    }
+}
+
+@mixin control {
+    @media screen and (max-width: 590px) {
+        @content;
+    }
+}
+
+@media screen and (max-width: 872px) {
+
+    .messi-perfil {
+      width: 50%;
+      top: 40%;
+      left: 50%;
+    }
+  
+    .messi-silueta-psg {
+      width: 53%;
+      top: 170%;
+      left: 57%;
+    }
+  
+    .fechas {
+      height: 15%;
+    }
+  
+    .funo {
+      left: 13.5%;
+      top: 57.5%;
+    }
+     
+    .fdos {
+      top: 90%;
+      left: 8%;
+    }
+    
+    .ftres {
+      top: 125%;
+      left: 13.5%;
+      margin-bottom: 3rem;
+    }
+  
+    .clubes-pp1 {
+      width: 9%;
+      left: 38%;
+      top: 64%;
+    }
+  
+    .vs1 {
+      top: 64%;
+      left: 56%;
+    }
+  
+    .clubes-pp2 {
+      width: 10%;
+      left: 75%;
+      top: 64%;
+    }
+    
+    .clubes-pp3 {
+      width: 15%;
+      top: 98%;
+      left: 80%;
+    }
+  
+    .vs2 {
+      top: 98%;
+      left: 55%;
+    }
+  
+    .clubes-pp4 {
+      width: 10%;
+      top: 98%;
+      left: 30%;
+    }
+  
+    .clubes-pp5 {
+      width: 10%;
+      top: 130%;
+      left: 75%;
+    }
+  
+    .vs3 {
+      top: 130%;
+      left: 56%;
+    }
+  
+    .clubes-pp6 {
+      width: 10%;
+      left: 38%;
+      top: 131%;
+    }
+  
+    .divpp {
+      width: 70%;
+      height: 30%;
+    }
+    
+    .uno {
+      top: 50%;
+      left: 18%;
+    }
+    
+    .dos {
+      width: 80%;
+      top: 83%;
+      left: 13%;
+  
+    }
+    
+    .tres {
+      top: 116%;
+      left: 18%;
+    }
+  
+    .wrap-pp {
+      margin-top: 150%;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .messi-silueta-psg {
+      top: 150%;
+    }
+  
+    .wrap-pp {
+      margin-top: 180%;
+    }
+  }

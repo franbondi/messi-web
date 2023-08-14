@@ -1,0 +1,549 @@
+/* INICIO */
+
+.logo-miami {
+
+    display: flex;
+    justify-content: flex-start;
+
+    .inter-miami {
+      position: absolute;
+      width: 13%;
+      margin-top: rem;
+      margin-left: 5rem;
+      filter: brightness(60%);
+
+      @include inter {
+        display: none;
+      }
+
+      @include leomessi {
+        width: 50%;
+      }
+    }
+
+    @include leomessi {
+      justify-content: center;
+      margin-left: 5rem;
+    }
+}
+
+
+.divlionelmessi {
+  display: flex;
+  flex-direction: column;
+}
+
+.lionel-inicio {
+  display: flex;
+
+  & .img {
+      position: absolute;
+      width: 25%;
+      top: 60%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      max-height: 100%;
+      filter: brightness(100%);
+
+      @include lionelmessi {
+        width: 50%;
+        margin-left: 2rem;
+        padding: 3rem;
+        top: 55%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      @include leomessi {
+        width: 50%;
+        margin-left: 2rem;
+        padding: 1rem;
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+      }
+  }
+}
+
+.messi-inicio {
+  display: flex;
+
+  & .img {
+      position: absolute;
+      width: 35%;
+      top: 72%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      max-height: 100%;
+      filter: brightness(100%);
+
+      @include lionelmessi {
+        width: 100%;
+        height: 20%;
+        padding: 1rem;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+
+        @include liomessi {
+          width: 100%;
+          height: 20%;
+          padding: 1rem;
+          top: 59%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+  }
+}
+
+
+/* PP */
+
+.mainpp {
+    .messi-silueta-inter {
+        overflow-x: hidden;
+
+        .messi-perfil {
+            position: absolute;
+            z-index: 1;
+            width: 40%;
+            top: 55%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+            filter: brightness(20%);
+        }
+    }
+
+    .messi-silueta-psg {
+        position: absolute;
+        z-index: 1;
+        width: 43%;
+        top: 55%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        max-height: 100%;
+        filter: brightness(20%);
+    }
+
+    .fechas {
+        position: absolute;
+        text-align: center;
+        width: 4rem;
+        height: 10%;
+        background-color: #fd87d6;
+        font-weight: 800;
+        font-size: 24px;
+        z-index: 3;
+
+        & span {
+            color: rgb(255, 255, 255);
+        }
+
+        .funo {
+            left: 42.5%;
+            top: 20.5%;
+        }
+
+        .fdos {
+            top: 16%;
+            left: 56.5%;
+        }
+
+        .ftres {
+            top: 20.5%;
+            left: 70%;
+        }
+    }
+
+    .clubes {
+        display: flex;
+        position: absolute;
+        width: 5rem;
+        text-align: center;
+
+        & img {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            filter: brightness(100%);
+            z-index: 3;
+        }
+
+        .clubes-pp1 {
+            top: 45%;
+            left: 44.7%;
+        }
+          
+          .clubes-pp2 {
+            width: 7%;
+            top: 75%;
+            left: 44.7%;
+        }
+          
+          .clubes-pp3 {
+            width: 10%;
+            left: 58.3%;
+            top: 70%;
+        }
+          
+          .clubes-pp4 {
+            width: 7%;
+            left: 58.3%;
+            top: 40%;
+        }
+          
+          .clubes-pp6 {
+            left: 72.3%;
+            top: 45%;
+            width: 7%;
+        }
+          
+          .clubes-pp5 {
+            width: 7%;
+            left: 72.2%;
+            top: 75%;
+        }
+    }
+
+    .divpp {
+        display: flex;
+        position: absolute;
+        width: 15%;
+        height: 66%;
+        color: white;
+        background-color: #303030cb;
+        padding: 2rem;
+        z-index: 2;
+        font-size: 18PX;
+        font-weight: 600;
+
+        .uno {
+            top: 28%;
+            left: 37.1%;
+        }
+          
+          .dos {
+            top: 23%;
+            left: 50.9%;
+        }
+          
+          .tres {
+            top: 28%;
+            left: 64.7%;
+        }
+      }
+
+      .vs {
+        display: flex;
+        position: absolute;
+        width: 5rem;
+        text-align: center;
+
+        & img {
+            position: absolute;
+            z-index: 1;
+            width: 60%;
+            transform: translate(-50%, -50%);
+            filter: brightness(100%);
+            z-index: 3;
+        }
+
+          .vs1 {
+            top: 59.5%;
+            left: 44.7%;
+        }
+          
+          .vs2 {
+            left: 58.3%;
+            top: 55%;
+        }
+          
+          .vs3 {
+            top: 59.5%;
+            left: 72.2%;
+        }          
+    }
+}
+
+/* STATS */
+
+.parrafo-stats {
+    display: flex;
+    position: absolute;
+    margin-left: 15%;
+    color: white;
+    padding: 6px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.mainstats {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    padding: 2rem;
+    margin-top: 0;
+
+    .contenedor-stats {
+        width: 85%;
+
+        .contenedor {
+            display: flex;
+            height: 35px;
+            margin-top: 55px;
+            background-color: #494949;
+            border: #000000 solid 2.5px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .barra {
+                width: 30rem;
+              height: 100%;
+              color: #ffffff;
+              background-color: #fd87d6;
+              font-weight: 800;
+              padding-top: 5px;
+              padding-left: 1.25rem;
+            }
+        }
+    }
+
+    .contenedor-circulo {
+        display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 2rem;
+
+      .circulo {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: #ffa7b600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 100%;
+        margin-top: 39px;
+        border: #fd87d6 solid 2.5px;
+      }
+    }
+}
+
+/* PALMARES */
+
+.messipalmares {
+    width: 40%;
+    top: 20%;
+    padding-left: 5%;
+    padding-bottom: 17rem;
+
+    @include palmares {
+      width: 100%;
+      margin-top: 25%;
+      padding-bottom: 0;
+    }
+}
+
+.barcelona-titulo {
+    color: #ffffff;
+    font-weight: 700;
+    padding: 1rem;
+    background-color: #007dd1b7;
+    border-top: #db0000 solid 3px;
+    border-bottom: #db0000 solid 3px;
+}
+
+.copas-barca {
+    color: rgb(255, 94, 94);
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 2rem;
+}
+
+.psg-titulo {
+    margin-top: 70%;
+    color: rgb(253, 253, 253);
+    font-weight: 700;
+    padding: 1rem;
+    background-color: #006bb3b7;
+    border-top: #ffffff solid 3px;
+    border-bottom: #ffffff solid 3px;
+  }
+  
+  .copas-psg {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 2rem;
+  }
+
+  .argentina-titulo {
+    margin-top: 50%;
+    color: rgb(253, 253, 253);
+    font-weight: 700;
+    padding: 1rem;
+    background-color: #007dd1b7;
+    border-top: #00d7df solid 3px;
+    border-bottom: #00d7df solid 3px;
+  }
+
+  @each $color in #0294f5b7, #006bb3b7, #007dd1b7 {
+    .titulo#{$color} {
+      background-color: $color;
+    }
+  }
+  
+  .copas-argentina {
+    color: rgb(82, 191, 255);
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 2rem;
+  }
+
+.mainpalmares {
+    display: flex;
+
+    .barcelona {
+        width: 10%;
+        height: auto;
+        display: flex;
+        position: absolute;
+        color: white;
+        z-index: 2;
+        padding-top: 2rem;
+      }
+
+      .champions {
+        left: 5%;
+      }
+      
+      .laliga {
+        margin-top: 3%;
+        left: 33%;
+      }
+      
+      .supercopa-euro {
+        width: 8%;
+        left: 60%;
+      }
+      
+      .del-rey {
+        left: 85%;
+      }
+      
+      .supercopa-españa {
+        margin-top: 22%;
+        left: 72%;
+      }
+      
+      .mundial-clubes {
+        width: 8%;
+        margin-top: 20%;
+        left:  18%;
+      }
+
+      .psg {
+        width: 17%;
+        height: auto;
+        display: flex;
+        position: absolute;
+        color: white;
+        z-index: 2;
+        padding-top: 2rem;
+      }
+      
+      .ligue1 {
+        left: 3%;
+      }
+      
+      .supercopa-psg {
+        width: 17%;
+        left: 25%;
+      }
+
+      .argentina {
+        max-width: 100%;
+        width: 7%;
+        height: auto;
+        display: flex;
+        position: absolute;
+        color: white;
+        padding-top: 2rem;
+      }
+      
+      .copa-america {
+        left: 5%;
+      }
+      
+      .sub-20 {
+        left: 33%;
+      }
+      
+      .medalla {
+        left: 60%;
+      }
+      
+      .mundial {
+        left: 85%;
+      }
+      
+      .finalissima {
+        width: 10%;
+        left: 45%;
+        margin-top: 25%;
+      }
+      
+}
+
+/* FOTOS */
+
+#myCarousel {
+    padding: 1rem;
+    width: 50%;
+    max-height: 100%;
+    overflow: hidden;
+    margin: 50px auto;
+
+    .carousel-item .img {
+        justify-content: center;
+        max-width: 100%;
+        max-height: 400px;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        height: 30px;
+        margin-top: 5%;
+        font-size: 25px;
+
+        @include control {
+          margin-top: 1rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+      }
+
+    @include fotos {
+      width: 70%;
+    }
+}
