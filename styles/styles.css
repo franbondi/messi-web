@@ -125,7 +125,7 @@ header a:hover{
 }
 
 @media screen and (max-width: 872px) {
-    .abrir-menu,
+  .abrir-menu,
     .cerrar-menu {
         display: block;
         border: 0;
@@ -169,7 +169,7 @@ header a:hover{
     header {
     animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) none;
     }
-}
+}  
 
 @keyframes slide-in-blurred-top {
   0% {

@@ -77,8 +77,8 @@ header a:hover {
   transition: 0.5s;
   transform: scale(1.1);
 }
-header .abrir-menu,
-header .cerrar-menu {
+.abrir-menu,
+.cerrar-menu {
   display: none;
 }
 header .menu .nav-list {
@@ -126,17 +126,72 @@ header .menu .nav-list .menu__item4 {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 872px) {
+  .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2.5rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: white;
+    }
+
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 5;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(0, 0, 0);
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax #000000b0;
+        background-image: linear-gradient(#000000, #444444);
+    }
+
+    .menu.visible { 
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+     
+    header {
+    animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) none;
+    }
+}  
+
 /* INICIO */
 .logo-miami {
   display: flex;
   justify-content: flex-start;
 }
-.logo-miami .inter-miami {
+
+.inter-miami {
   position: absolute;
   width: 13%;
   margin-top: rem;
   margin-left: 5rem;
   filter: brightness(60%);
+}
+
+@media screen and (max-width: 596px) {
+  .inter-miami {
+      display: none;
+  }
 }
 
 .divlionelmessi {
@@ -147,7 +202,7 @@ header .menu .nav-list .menu__item4 {
 .lionel-inicio {
   display: flex;
 }
-.lionel-inicio .img {
+.lionel-inicio img {
   position: absolute;
   width: 25%;
   top: 60%;
@@ -161,7 +216,7 @@ header .menu .nav-list .menu__item4 {
 .messi-inicio {
   display: flex;
 }
-.messi-inicio .img {
+.messi-inicio img {
   position: absolute;
   width: 35%;
   top: 72%;
@@ -172,11 +227,75 @@ header .menu .nav-list .menu__item4 {
   filter: brightness(100%);
 }
 
+@media screen and (max-width: 650px) {
+  .lionel-inicio img {
+      width: 50%;
+      margin-left: 2rem;
+      padding: 3rem;
+      top: 55%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      max-height: 100%;
+  }
+
+  .messi-inicio img {
+      width: 100%;
+      height: 20%;
+      padding: 1rem;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      max-height: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 308px) {
+  .lionel-inicio img {
+      width: 50%;
+      margin-left: 2rem;
+      padding: 1rem;
+      top: 50%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      max-height: 100%;
+  }
+
+  .messi-inicio img {
+      width: 100%;
+      height: 20%;
+      padding: 1rem;
+      top: 59%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      max-height: 100%;
+  }
+
+  .logo-miami {
+      justify-content: center;
+      margin-left: 5rem;
+  }
+
+  .inter-miami {
+      width: 50%;
+  }
+}
+
 /* PP */
-.mainpp .messi-silueta-inter {
+
+.mainpp {
+  flex: 1;
+}
+
+.si-silueta-inter {
   overflow-x: hidden;
 }
-.mainpp .messi-silueta-inter .messi-perfil {
+
+.messi-perfil {
   position: absolute;
   z-index: 1;
   width: 40%;
@@ -187,7 +306,8 @@ header .menu .nav-list .menu__item4 {
   max-height: 100%;
   filter: brightness(20%);
 }
-.mainpp .messi-silueta-psg {
+
+.messi-silueta-psg {
   position: absolute;
   z-index: 1;
   width: 43%;
@@ -198,7 +318,8 @@ header .menu .nav-list .menu__item4 {
   max-height: 100%;
   filter: brightness(20%);
 }
-.mainpp .fechas {
+
+.fechas {
   position: absolute;
   text-align: center;
   width: 4rem;
@@ -208,28 +329,34 @@ header .menu .nav-list .menu__item4 {
   font-size: 24px;
   z-index: 3;
 }
-.mainpp .fechas span {
-  color: rgb(255, 255, 255);
-}
-.mainpp .fechas .funo {
+
+.funo {
   left: 42.5%;
   top: 20.5%;
 }
-.mainpp .fechas .fdos {
+
+.fechas span {
+  color: rgb(255, 255, 255);
+}
+
+.fdos {
   top: 16%;
   left: 56.5%;
 }
-.mainpp .fechas .ftres {
+
+.ftres {
   top: 20.5%;
   left: 70%;
 }
-.mainpp .clubes {
+
+.clubes {
   display: flex;
   position: absolute;
   width: 5rem;
   text-align: center;
 }
-.mainpp .clubes img {
+
+.clubes img {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -237,66 +364,50 @@ header .menu .nav-list .menu__item4 {
   filter: brightness(100%);
   z-index: 3;
 }
-.mainpp .clubes .clubes-pp1 {
+
+.clubes-pp1 {
   top: 45%;
   left: 44.7%;
 }
-.mainpp .clubes .clubes-pp2 {
+
+.clubes-pp2 {
   width: 7%;
   top: 75%;
   left: 44.7%;
 }
-.mainpp .clubes .clubes-pp3 {
+
+.clubes-pp3 {
   width: 10%;
   left: 58.3%;
   top: 70%;
 }
-.mainpp .clubes .clubes-pp4 {
+
+.clubes-pp4 {
   width: 7%;
   left: 58.3%;
   top: 40%;
 }
-.mainpp .clubes .clubes-pp6 {
+
+.clubes-pp6 {
   left: 72.3%;
   top: 45%;
   width: 7%;
 }
-.mainpp .clubes .clubes-pp5 {
+
+.clubes-pp5 {
   width: 7%;
   left: 72.2%;
   top: 75%;
 }
-.mainpp .divpp {
-  display: flex;
-  position: absolute;
-  width: 15%;
-  height: 66%;
-  color: white;
-  background-color: rgba(48, 48, 48, 0.7960784314);
-  padding: 2rem;
-  z-index: 2;
-  font-size: 18PX;
-  font-weight: 600;
-}
-.mainpp .divpp .uno {
-  top: 28%;
-  left: 37.1%;
-}
-.mainpp .divpp .dos {
-  top: 23%;
-  left: 50.9%;
-}
-.mainpp .divpp .tres {
-  top: 28%;
-  left: 64.7%;
-}
-.mainpp .vs {
+
+.vs {
   display: flex;
   position: absolute;
   width: 5rem;
   text-align: center;
 }
-.mainpp .vs img {
+
+.vs img {
   position: absolute;
   z-index: 1;
   width: 60%;
@@ -304,19 +415,171 @@ header .menu .nav-list .menu__item4 {
   filter: brightness(100%);
   z-index: 3;
 }
-.mainpp .vs .vs1 {
+
+.vs1 {
   top: 59.5%;
   left: 44.7%;
 }
-.mainpp .vs .vs2 {
+
+.vs2 {
   left: 58.3%;
   top: 55%;
 }
-.mainpp .vs .vs3 {
+
+.vs3 {
   top: 59.5%;
   left: 72.2%;
 }
 
+.divpp {
+  display: flex;
+  position: absolute;
+  width: 15%;
+  height: 66%;
+  color: white;
+  background-color: #303030cb;
+  padding: 2rem;
+  z-index: 2;
+  font-size: 18PX;
+  font-weight: 600;
+}
+
+.uno {
+  top: 28%;
+  left: 37.1%;
+}
+
+.dos {
+  top: 23%;
+  left: 50.9%;
+}
+
+.tres {
+  top: 28%;
+  left: 64.7%;
+}
+
+@media screen and (max-width: 872px) {
+
+  .messi-perfil {
+    width: 50%;
+    top: 40%;
+    left: 50%;
+  }
+
+  .messi-silueta-psg {
+    width: 53%;
+    top: 170%;
+    left: 57%;
+  }
+
+  .fechas {
+    height: 15%;
+  }
+
+  .funo {
+    left: 13.5%;
+    top: 57.5%;
+  }
+   
+  .fdos {
+    top: 90%;
+    left: 8%;
+  }
+  
+  .ftres {
+    top: 125%;
+    left: 13.5%;
+    margin-bottom: 3rem;
+  }
+
+  .clubes-pp1 {
+    width: 9%;
+    left: 38%;
+    top: 64%;
+  }
+
+  .vs1 {
+    top: 64%;
+    left: 56%;
+  }
+
+  .clubes-pp2 {
+    width: 10%;
+    left: 75%;
+    top: 64%;
+  }
+  
+  .clubes-pp3 {
+    width: 15%;
+    top: 98%;
+    left: 80%;
+  }
+
+  .vs2 {
+    top: 98%;
+    left: 55%;
+  }
+
+  .clubes-pp4 {
+    width: 10%;
+    top: 98%;
+    left: 30%;
+  }
+
+  .clubes-pp5 {
+    width: 10%;
+    top: 130%;
+    left: 75%;
+  }
+
+  .vs3 {
+    top: 130%;
+    left: 56%;
+  }
+
+  .clubes-pp6 {
+    width: 10%;
+    left: 38%;
+    top: 131%;
+  }
+
+  .divpp {
+    width: 70%;
+    height: 30%;
+  }
+  
+  .uno {
+    top: 50%;
+    left: 18%;
+  }
+  
+  .dos {
+    width: 80%;
+    top: 83%;
+    left: 13%;
+
+  }
+  
+  .tres {
+    top: 116%;
+    left: 18%;
+  }
+
+  .wrap-pp {
+    margin-top: 150%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .messi-silueta-psg {
+    top: 150%;
+  }
+
+  .wrap-pp {
+    margin-top: 180%;
+  }
+}
 /* STATS */
 .parrafo-stats {
   display: flex;
@@ -514,6 +777,14 @@ header .menu .nav-list .menu__item4 {
   margin-top: 25%;
 }
 
+@media screen and (max-width: 655px) {
+  .messipalmares {
+    width: 100%;
+    margin-top: 25%;
+    padding-bottom: 0;
+  }
+}
+
 /* FOTOS */
 #myCarousel {
   padding: 1rem;
@@ -522,7 +793,8 @@ header .menu .nav-list .menu__item4 {
   overflow: hidden;
   margin: 50px auto;
 }
-#myCarousel .carousel-item .img {
+
+.carousel-item img {
   justify-content: center;
   max-width: 100%;
   max-height: 400px;
@@ -530,10 +802,28 @@ header .menu .nav-list .menu__item4 {
   height: auto;
   margin: auto;
 }
-#myCarousel .carousel-control-prev, #myCarousel .carousel-control-next {
+
+.carousel-control-prev, .carousel-control-next {
   height: 30px;
   margin-top: 5%;
   font-size: 25px;
+}
+
+@media screen and (max-width: 872px) {
+  #myCarousel {
+      width: 70%;
+  }
+  
+}
+
+@media screen and (max-width: 590px) {
+  .carousel-control-prev, 
+  .carousel-control-next {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
+  
 }
 
 .footer-web {
@@ -560,6 +850,7 @@ header .menu .nav-list .menu__item4 {
   color: #ffffff;
   font-size: 30px;
   font-weight: 800;
+  max-width: 100%;
   width: 100%;
   padding: 10px;
   bottom: 0;
@@ -572,4 +863,21 @@ header .menu .nav-list .menu__item4 {
 
 .proximo-partido {
   margin-top: 1rem;
-}/*# sourceMappingURL=estilo.css.map */
+}
+
+.footer-pp {
+  padding-top: 50px;
+  margin-top: 50%;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 472px) {
+  .footer-pp {
+    margin-top: 200%;
+    font-size: 10px;
+  }
+  
+
+}
+
+/*# sourceMappingURL=estilo.css.map */
